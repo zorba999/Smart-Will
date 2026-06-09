@@ -3,12 +3,18 @@ node_modules/
 app/node_modules/
 
 # Build output
-app/dist/
 dist/
+app/dist/
+app/.output/
+app/.nitro/
+app/.tanstack/
+app/.vinxi/
+app/.wrangler/
 
 # Env files (commit .env.example instead)
 .env
 app/.env
+app/.dev.vars
 *.local
 
 # Python
