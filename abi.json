@@ -1,0 +1,144 @@
+{
+  "ctor": {
+    "params": [
+      [
+        "testator_identity_hint",
+        "string"
+      ],
+      [
+        "proof_of_life_cadence_days",
+        "int"
+      ]
+    ],
+    "kwparams": {}
+  },
+  "methods": {
+    "add_clause": {
+      "params": [
+        [
+          "original_text",
+          "string"
+        ],
+        [
+          "beneficiary",
+          "string"
+        ],
+        [
+          "beneficiary_hint",
+          "string"
+        ],
+        [
+          "asset_share_atto",
+          "int"
+        ],
+        [
+          "condition_type",
+          "string"
+        ],
+        [
+          "condition_description",
+          "string"
+        ],
+        [
+          "data_sources_hint",
+          "string"
+        ],
+        [
+          "deadline_iso",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": false
+    },
+    "claim_clause": {
+      "params": [
+        [
+          "clause_id",
+          "int"
+        ],
+        [
+          "evidence_url",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "deposit_funds": {
+      "params": [],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": true
+    },
+    "get_all_clauses": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "array"
+    },
+    "get_clause": {
+      "params": [
+        [
+          "clause_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_death_evidence": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "get_status": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "heartbeat": {
+      "params": [],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "remove_clause": {
+      "params": [
+        [
+          "clause_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "trigger_death_check": {
+      "params": [
+        [
+          "evidence_urls",
+          [
+            {
+              "$rep": "string"
+            }
+          ]
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}

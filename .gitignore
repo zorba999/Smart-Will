@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+app/node_modules/
+
+# Build output
+app/dist/
+dist/
+
+# Env files (commit .env.example instead)
+.env
+app/.env
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# GenLayer test artifacts
+artifacts/
+
+# Editor / OS
+.DS_Store
+.idea/
+*.log

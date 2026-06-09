@@ -1,0 +1,17 @@
+{
+  "testnet-bradbury": {
+    "contract": "SmartWill",
+    "address": "0xd4388aC3A5BBdE1c55125109bD521706eA1dA4d8",
+    "deployTx": "0xba25f5e0555b1fa2eba890bc3a88cf805c1a8f0122ed940f31424f5cd11ec8ef",
+    "deployer": "0x4e00eda68dac53c98f524cdccfeb2dc502753b9f",
+    "deployerName": "faucet",
+    "chainId": 4221,
+    "rpc": "https://rpc-bradbury.genlayer.com",
+    "explorer": "https://explorer-bradbury.genlayer.com/",
+    "constructorArgs": {
+      "testator_identity_hint": "Hassan Berrada (DOB 1980-05-12, residence Casablanca MA)",
+      "proof_of_life_cadence_days": 30
+    },
+    "deployedAt": "2026-06-09"
+  }
+}
