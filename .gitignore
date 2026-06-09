@@ -10,6 +10,7 @@ app/.nitro/
 app/.tanstack/
 app/.vinxi/
 app/.wrangler/
+app/.vercel/
 
 # Env files (commit .env.example instead)
 .env
